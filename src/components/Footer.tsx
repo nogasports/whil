@@ -88,16 +88,7 @@ export default function Footer() {
             <p className="text-white/80 text-sm mb-4 sm:mb-0">
               © {new Date().getFullYear()} WIHL Project at Strathmore Business School. All rights reserved.
             </p>
-            <div className="flex items-center space-x-6">
-              <div className="flex space-x-4">
-                <Link
-                  to="/admin"
-                  className="inline-flex items-center px-4 py-2 border border-white text-sm font-medium text-white hover:bg-white hover:text-[#a9343a] transition-colors"
-                >
-                  <LogIn className="h-4 w-4 mr-2" />
-                  Admin Portal
-                </Link>
-              </div>
+            <div className="flex space-x-6">
               {navigation.social.map((item) => {
                 const Icon = item.icon;
                 return (
